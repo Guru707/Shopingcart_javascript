@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cart</title>
+  </head>
+  <body>
+    <header class="p-5 bg-black">
+      <nav class="navigation container flex">
+        <h2 class="text-white"><a href="index.html">Logo</a></h2>
+        <div class="text-white ml-auto relative min-w-8">
+          <a href="cart..html">
+            <i class="fas fa-cart-flatbed"></i>
+            <span
+              class="cart-value bg-red p-1 w-5 h-5 bg-white text-black absolute -top-3 -right-3 flex items-center content-center text-center"
+              id="cart_value"
+              >0</span
+            >
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="p-5">
+      <div class="container">
+        <div class="grid grid-cols-12 gap-4">
+          
+          <div class="col-span-8 bg-gray-100 p-4 rounded" >
+            <div id="cartPage"></div>
+          </div>
+          <div class="col-span-4 bg-gray-100 p-4 rounded ">
+            <div class="bg-white p-4 shadow rounded-lg " id="totalprice">
+              
+            </div>  
+          </div>
+        </div>
+      </div>
+    </main>
+    <script  src="js/cart.js"></script>
+  </body>
+</html>
