@@ -143,6 +143,8 @@ let removeItem = (id) => {
   localStorageData(basket);
   genrateCartItem(globalData);
   getTotalPrice(globalData);
+  cartCaluculation();
+
 };
 
 function clearAllItems() {
@@ -150,6 +152,7 @@ function clearAllItems() {
   localStorageData(basket);
   genrateCartItem(globalData);
   getTotalPrice();
+  cartCaluculation();
 }
 
 let getTotalPrice = (data) => {
